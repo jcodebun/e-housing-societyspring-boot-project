@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+        
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="sidebar" value="/WEB-INF/basefragments/_sidebar.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+    </definition>  
+    
+        <!-- Base Define -->
+    <definition name="base.definition1" 
+        template="/WEB-INF/layouts/classicHome.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="sidebar" value="/WEB-INF/basefragments/_sidebar.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+    </definition> 
+    
+    <!-- Home Page  -->
+    <definition name="welcome" extends="base.definition1">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+    </definition>  
+   
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition> 
+    
+     <definition name="contactUs" extends="base.definition">  
+        <put-attribute name="title" value="Contact Us" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_contactUs.jsp" />  
+    </definition>
+    
+    <definition name="society" extends="base.definition">  
+        <put-attribute name="title" value="Society" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_society.jsp" />  
+    </definition>
+    
+     <definition name="societyList" extends="base.definition">  
+        <put-attribute name="title" value="Society List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_societyList.jsp" />  
+    </definition>
+    
+    
+    <definition name="house" extends="base.definition">  
+        <put-attribute name="title" value="House" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_house.jsp" />  
+    </definition>
+    
+     <definition name="houseList" extends="base.definition">  
+        <put-attribute name="title" value="House List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_houseList.jsp" />  
+    </definition>
+    
+    
+    
+     <definition name="allocate" extends="base.definition">  
+        <put-attribute name="title" value="Allocate " />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_allocate.jsp" />  
+    </definition>
+    
+     <definition name="allocateList" extends="base.definition">  
+        <put-attribute name="title" value="Allocate List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_allocateList.jsp" />  
+    </definition>
+    
+    <definition name="complain" extends="base.definition">  
+        <put-attribute name="title" value="Complain" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_complain.jsp" />  
+    </definition>
+    
+      <definition name="complainList" extends="base.definition">  
+        <put-attribute name="title" value="Complain List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_complainList.jsp" />  
+    </definition>
+    
+     <definition name="message" extends="base.definition">  
+        <put-attribute name="title" value="Message" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_message.jsp" />  
+    </definition>
+    
+      <definition name="messageList" extends="base.definition">  
+        <put-attribute name="title" value="Message List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_messageList.jsp" />  
+    </definition>
+    
+     <definition name="rent" extends="base.definition">  
+        <put-attribute name="title" value="Add to rent" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_rent.jsp" />  
+    </definition>
+    
+      <definition name="rentList" extends="base.definition">  
+        <put-attribute name="title" value="Rent List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_rentList.jsp" />  
+    </definition>
+    
+      <definition name="sell" extends="base.definition">  
+        <put-attribute name="title" value="Add to sell" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_sell.jsp" />  
+    </definition>
+    
+      <definition name="sellList" extends="base.definition">  
+        <put-attribute name="title" value="Sell List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_sellList.jsp" />  
+    </definition>
+    
+     <definition name="userDetail" extends="base.definition">  
+        <put-attribute name="title" value="Detail" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userDetail.jsp" />  
+    </definition>
+    
+      <definition name="homeSearch" extends="base.definition">  
+        <put-attribute name="title" value="Search" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_homeSearch.jsp" />  
+    </definition>
+    
+    <definition name="signUp" extends="base.definition">  
+        <put-attribute name="title" value="Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_registration.jsp" />  
+    </definition> 
+    
+
+     <definition name="myprofile" extends="base.definition">  
+        <put-attribute name="title" value="My Profile" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_myProfile.jsp" />  
+    </definition>
+    
+     <definition name="forgetPassword" extends="base.definition">  
+        <put-attribute name="title" value="Forget Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_forgetPassword.jsp" />  
+    </definition>
+
+     <definition name="changePassword" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_changePassword.jsp" />  
+    </definition>
+    
+   
+  
+</tiles-definitions> 

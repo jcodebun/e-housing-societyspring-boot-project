@@ -1,0 +1,39 @@
+package in.com.ehousing.service;
+
+import java.sql.Blob;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.sql.rowset.serial.SerialException;
+
+import in.com.ehousing.dto.SocietyDTO;
+import in.com.ehousing.exception.DuplicateRecordException;
+
+
+
+public interface SocietyServiceInt {
+
+	public long add(SocietyDTO dto) throws DuplicateRecordException;
+
+	public void delete(SocietyDTO dto);
+
+	public SocietyDTO findBypk(long pk);
+
+	public SocietyDTO findBySocietyName(String name);
+
+	public void update(SocietyDTO dto) throws DuplicateRecordException;
+
+	public List<SocietyDTO> list();
+
+	public List<SocietyDTO> list(int pageNo, int pageSize);
+
+	public List<SocietyDTO> search(SocietyDTO dto);
+
+	public List<SocietyDTO> search(SocietyDTO dto, int pageNo, int pageSize);
+	
+	public Blob getImageById(long id) throws SerialException, SQLException;
+	
+
+	
+
+}
